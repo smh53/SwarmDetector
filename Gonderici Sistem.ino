@@ -26,7 +26,7 @@ void loop(){
     message = (BluetoothSerial.readStringUntil('\n'));  
     delay(1000);
     x[1] = message.toFloat();
-    mythologygsm.mesaj_yollama("+905457430886", "1 Nolu Kovanda : " + saat + " 'saatinde " + x[1] + " kg dusus goruldu ve"); 
+    mythologygsm.mesaj_yollama("+90545*****86", "1 Nolu Kovanda : " + saat + " 'saatinde " + x[1] + " kg dusus goruldu ve"); 
     Serial.println("Kilo Değeri : ");
     Serial.print(String(x[1]));
     Serial.println(" kg");
@@ -38,7 +38,7 @@ void loop(){
     message = (BluetoothSerial.readStringUntil('\n'));
     delay(1000);
     x[0] = message.toFloat();
-    mythologygsm.mesaj_yollama("+905457430886", String(x[0]) + " Celcius sicaklik artisi tespit edildi."); 
+    mythologygsm.mesaj_yollama("+90545*****86", String(x[0]) + " Celcius sicaklik artisi tespit edildi."); 
     Serial.println("Sicaklik Değeri : ");
     Serial.print(x[0]);
     Serial.println(" Celcius");
