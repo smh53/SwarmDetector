@@ -26,7 +26,7 @@ void setup() {
  BTSerial.begin(9600);  
  scale.begin(DOUT, CLK);
  dht.begin();
- scale.set_scale(calibration_factor); //This value is obtained by using the SparkFun_HX711_Calibration sketch
+ scale.set_scale(calibration_factor); 
  scale.tare(); //Assuming there is no weight on the scale at start up, reset the scale to 0
  Serial.println("Readings:");
 }
